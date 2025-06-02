@@ -1,0 +1,22 @@
+# Ignore environment specific files
+.env
+venv/
+__pycache__/
+
+# Ignore resume uploads
+backend/static/resumes/
+
+# Ignore database file
+talent_platform.db
+
+# Ignore frontend build directory
+frontend/dist/
+node_modules/
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+thumbs.db 

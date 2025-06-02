@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: talent-acquisition
+Version: 0.1.0
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: sqlalchemy
+Requires-Dist: python-multipart
+Requires-Dist: python-dotenv
+Requires-Dist: google-generativeai
+Requires-Dist: numpy
+Dynamic: requires-dist

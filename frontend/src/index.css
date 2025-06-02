@@ -1,0 +1,28 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* Add more styles as needed for components and pages */ 
