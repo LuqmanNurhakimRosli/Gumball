@@ -1,11 +1,20 @@
 # interview_analysis.py
 
+import os
 import google.generativeai as genai
 from typing import List, Dict
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyCIHKrBJ0H54-FCBoHp-S2tted7wKku1RQ"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY environment variable is not set.")
 genai.configure(api_key=GEMINI_API_KEY)
+
+
 
 def analyze_interview_answer(answer_text: str, question: str) -> dict:
     """Analyzes interview answer using Gemini API."""
